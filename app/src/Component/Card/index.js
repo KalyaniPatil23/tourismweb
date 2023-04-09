@@ -1,4 +1,6 @@
 import './card.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 function Card(props) {
 
@@ -14,6 +16,9 @@ function Card(props) {
                 <div className='card-body'>
                     <p>{props.description}</p>
                 </div>
+            </div>
+            <div style={{textAlign: 'right', margin: '2%', marginTop:'auto'}}>
+                <FontAwesomeIcon icon={faArrowCircleRight} size='2x' color='#E6F2F2'/>
             </div>
         </div>
     )

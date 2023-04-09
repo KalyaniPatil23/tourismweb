@@ -1,0 +1,25 @@
+.container{
+    width: 80%;
+    background: #fff;
+    padding: 2%;
+    display: flex;
+    margin: 2%;
+}
+
+.title{
+    text-align: left;
+    width: 50%;
+    justify-content: center;
+}
+
+.title h6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.icon{
+    text-align: right;
+    width: 50%;
+    justify-content: center;
+}
