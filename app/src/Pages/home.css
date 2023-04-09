@@ -1,0 +1,58 @@
+.home{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.home-text{
+    position: absolute;
+    /* width: 724px; */
+    top: 25%;
+    left: 50%;
+    /* top: 55%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.home-text h1{
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 132px;
+    /* background: white; */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 6.44%, #FFFFFF 95.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 850px) {
+    .home-text{
+        top: 20%;
+    }
+    .home-text h1{
+        font-size: 64px;
+        line-height: 60px;
+        font-style: normal;
+    }
+}
+
+.highlights {
+    height: 400px;
+    width: 100%;
+}
+
+.subtitle{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #001A1A;
+    text-align: left;
+    margin: 24px;
+    margin-left: 2%;
+}

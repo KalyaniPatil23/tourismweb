@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Component/Navbar';
+import Home from './Pages/Home';
+import Surfing from './Pages/Surfing';
+import Hula from './Pages/Hula';
+import Vulcano from './Pages/Vulcano';
+import BookTrip from './Pages/BookTrip';
+import{Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/surfing' element={<Surfing/>}/>
+        <Route path='/hula' element={<Hula/>}/>
+        <Route path='/vulcano' element={<Vulcano/>}/>
+        <Route path='/book/trip' element={<BookTrip/>}/>
+      </Routes>
     </div>
   );
 }

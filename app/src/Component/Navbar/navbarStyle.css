@@ -1,0 +1,145 @@
+.NavbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0, 0.25);
+    width: 85%;
+    height: 50px;
+    border-radius: 13px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+    background: #fff;
+}
+
+.navbar-logo{
+    color: #001A1A;
+    font-size: 24px;
+    cursor: pointer;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #001A1A;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    padding: 0px, 24px, 0px, 24px;
+}
+
+.nav-link i{
+    padding-right: 10px;
+}
+
+.nav-link:hover{
+    background-color: #01959a;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link-mobile {
+    display: none;
+}
+
+button{
+    padding: 9px 24px 11px;
+    background-color: #008080;
+    color: #fff;
+    white-space: nowrap;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* button:hover{
+    background-color: #fff;
+} */
+
+.menu-icons{
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+
+    .NavbarItems{
+        z-index: 99;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 1;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        transition: 0.3s ease-in-out;
+        border-radius: 8px;
+        /* background: #fff; */
+    }
+
+    .nav-menu.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .nav-link{
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        padding: 1rem 0;
+        text-align: left;
+        padding-left: 10%;
+    }
+
+    .nav-link:hover{
+        background-color: #008080;
+        transition: none;
+    }
+
+    button{
+        display: block;
+        text-align: center;
+        margin-left: 10%;
+        padding: 9px, 24px, 11px, 24px;
+        /* margin: auto; */
+        border-radius: 8px;
+        width: 40%;
+        background-color: #008080;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .menu-icons{
+        display: block;
+        cursor: pointer;
+    }
+}
