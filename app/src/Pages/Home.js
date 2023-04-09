@@ -6,6 +6,7 @@ import { getHighlights } from "../api/highlights";
 import Card from "../Component/Card";
 import HorizontalScroll from 'react-scroll-horizontal';
 import Category from "../Component/Category";
+import Footer from "../Component/Footer";
 
 function Home() {
 
@@ -53,9 +54,13 @@ function Home() {
                     </div>
                     <div className="categories">
                     <h6 className="subtitle">Travel Guide</h6>
+                    <div>
+
+                    </div>
                     </div>
                 </div>
-            </div> 
+            </div>
+            <Footer/>
         </>
     );
 }

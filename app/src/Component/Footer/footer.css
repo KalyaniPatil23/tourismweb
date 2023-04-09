@@ -1,0 +1,13 @@
+.footer {
+    padding-left: 10%;
+    background: #001A1A;
+    text-align: left;
+}
+
+.footer-logo{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    font-style: italic;
+    font-family: cursive;
+}
