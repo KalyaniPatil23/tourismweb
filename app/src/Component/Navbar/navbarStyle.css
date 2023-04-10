@@ -4,7 +4,7 @@
     align-items: center;
     padding: 0 30px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0, 0.25);
-    width: 85%;
+    width: 70%;
     height: 50px;
     border-radius: 13px;
     position: fixed;
@@ -45,8 +45,8 @@
 }
 
 .nav-link:hover{
-    background-color: #01959a;
-    color: #fff;
+    color: #01959a;
+    /* color: #fff; */
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
 }
@@ -118,7 +118,7 @@ button{
     }
 
     .nav-link:hover{
-        background-color: #008080;
+        color: #008080;
         transition: none;
     }
 

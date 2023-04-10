@@ -13,7 +13,7 @@ img{
 .home-text{
     position: absolute;
     /* width: 724px; */
-    top: 25%;
+    top: 18%;
     left: 50%;
     /* top: 55%;
     left: 50%; */
@@ -31,21 +31,22 @@ img{
     -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 850px) {
-    .home-text{
-        top: 20%;
-    }
-    .home-text h1{
-        font-size: 64px;
-        line-height: 60px;
-        font-style: normal;
-    }
+.highlights {
+    max-height: 400px;
+    /* width: 1136px; */
+    overflow-x: auto;
+    display: grid;
+    grid-auto-flow: column;
+    overscroll-behavior-inline: contain;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 2%;
+    /* grid-auto-columns: 40%; */
 }
 
-/* .highlights {
-    height: 400px;
-    width: 100%;
-} */
+.highlights::-webkit-scrollbar{
+    width: 0;
+}
 
 .subtitle{
     font-weight: 700;
@@ -54,7 +55,7 @@ img{
     color: #001A1A;
     text-align: left;
     margin: 24px;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .categories-main{
@@ -69,4 +70,38 @@ img{
 
 .categories{
     width: 40%;
+}
+
+@media screen and (max-width: 850px) {
+    .home-text{
+        top: 25%;
+    }
+    .home-text h1{
+        font-size: 64px;
+        line-height: 60px;
+        font-style: normal;
+    }
+    .categories{
+        width: 90%;
+        margin: auto;
+        /* margin-top: 10%; */
+    }
+    .categories-main{
+        width: 100%;
+        height: auto;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background: #E6F2F2;
+        display: block;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .highlights {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .button{
+        letter-spacing: 0;
+    }
 }

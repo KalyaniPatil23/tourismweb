@@ -17,8 +17,10 @@ function Card(props) {
                     <p>{props.description}</p>
                 </div>
             </div>
-            <div style={{textAlign: 'right', margin: '2%', marginTop:'auto'}}>
-                <FontAwesomeIcon icon={faArrowCircleRight} size='2x' color='#E6F2F2'/>
+            <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+            <div className='card-next'>
+                <FontAwesomeIcon icon={faArrowCircleRight} size='2x' color='#E6F2F2' className='card-button'/>
+            </div>
             </div>
         </div>
     )

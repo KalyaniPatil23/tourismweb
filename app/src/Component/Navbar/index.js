@@ -12,9 +12,6 @@ function Navbar() {
     return(
         <nav className='NavbarItems'>
             <h1 className='navbar-logo'>Aloha</h1>
-            <div className='menu-icons'>
-                <FontAwesomeIcon icon={clicked ? faTimes : faBars} onClick={handleClicked}/>
-            </div>
             <ul className={clicked? 'nav-menu active' : 'nav-menu'}>
                 {
                     MenuItems.map((item, index) => (
@@ -28,6 +25,10 @@ function Navbar() {
                 }
                 <button >Book a trip</button>
             </ul>
+            {/* <button >Book a trip</button> */}
+            <div className='menu-icons'>
+                <FontAwesomeIcon icon={clicked ? faTimes : faBars} onClick={handleClicked}/>
+            </div>
         </nav>
     )
 
